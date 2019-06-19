@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EndTerm.ContentList"
+             NavigationPage.HasNavigationBar="true">
+    <NavigationPage.TitleView>
+        <StackLayout>
+            <ImageButton    x:Name="searchbtn" Clicked="ShowSearchbar" BackgroundColor="Transparent" HeightRequest="30" WidthRequest="30" CornerRadius="10" HorizontalOptions="Start" Aspect="Fill" Source="searchic.png" />
+            
+            <SearchBar x:Name="Search" Placeholder="Search"  IsVisible="false" TextChanged="ShowContent" BackgroundColor="Transparent"  />
+           
+        </StackLayout>
+
+    </NavigationPage.TitleView>
+
+    <StackLayout  >
+
+
+
+        <AbsoluteLayout>
+           
+
+            <ListView x:Name="ItemsListView"
+                ItemsSource="{Binding Item}"
+                VerticalOptions="FillAndExpand"
+                
+               
+                IsPullToRefreshEnabled="false"
+               
+                CachingStrategy="RecycleElement"
+                ItemSelected="OnItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell Appearing="CellColor">
+                            <StackLayout Padding="10" Orientation="Horizontal">
+                                <Label Text="{Binding Id}" 
+                                LineBreakMode="NoWrap" 
+                               
+                                FontSize="20" 
+                                   TextColor="DarkRed"
+                                   />
+                                <Label Text="  - " 
+                                LineBreakMode="NoWrap" 
+                               
+                                FontSize="20" 
+                                   TextColor="DarkRed"
+                                   />
+                                <Label Text="{Binding Text}" 
+                                LineBreakMode="NoWrap" 
+                               TextColor="Black"
+                                FontSize="16" />
+
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <ImageButton x:Name="close"  AbsoluteLayout.LayoutBounds=".91,.88,60,60" BackgroundColor="Transparent" CornerRadius="50" 
+                AbsoluteLayout.LayoutFlags="PositionProportional"   Clicked="CloseOthers" Source="closeicon.png" IsVisible="False" Aspect="Fill"/>
+
+            <ImageButton x:Name="btn1"  AbsoluteLayout.LayoutBounds=".91,.88,60,60"  CornerRadius="50" BackgroundColor="Transparent"
+                AbsoluteLayout.LayoutFlags="PositionProportional"   Clicked="ShowOthers" Source="sharecircle.png" Aspect="Fill"  />
+
+
+            <ImageButton x:Name="btn2"  AbsoluteLayout.LayoutBounds=".870,.72,40,40" BackgroundColor="White" CornerRadius="50" IsVisible="False" 
+                AbsoluteLayout.LayoutFlags="PositionProportional" ClassId="share" Source="fbicon.png" Aspect="Fill" Clicked="Btn2_Clicked" />
+
+
+            <ImageButton  x:Name="btn3" AbsoluteLayout.LayoutBounds=".870,.60,40,40" BackgroundColor="White" CornerRadius="50" IsVisible="False"  Aspect="Fill" Source="twitericon.png"
+                AbsoluteLayout.LayoutFlags="PositionProportional"   Clicked="Btn2_Clicked"/>
+
+
+            <ImageButton 
+            x:Name="btn4" AbsoluteLayout.LayoutBounds=".870,.47,40,40" BackgroundColor="White" CornerRadius="50" IsVisible="False" Aspect="Fill" Source="whtsap.png"
+                AbsoluteLayout.LayoutFlags="PositionProportional"   Clicked="Btn2_Clicked"/>
+
+
+            <ImageButton x:Name="btn5"
+            
+            AbsoluteLayout.LayoutBounds=".870,.35,40,40" BackgroundColor="White" CornerRadius="50" IsVisible="False" Aspect="Fill" Source="google.png"
+                AbsoluteLayout.LayoutFlags="PositionProportional"   Clicked="Btn2_Clicked" />
+
+
+
+
+
+        </AbsoluteLayout>
+
+    </StackLayout>
+
+</ContentPage>

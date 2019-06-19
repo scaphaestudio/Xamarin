@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:EndTerm"
+                
+                  x:Class="EndTerm.MainPage" HeightRequest="0.5"
+                  NavigationPage.HasNavigationBar="False"
+                 >
+    <MasterDetailPage.Master >
+        <ContentPage Title="More"  BackgroundColor="White">
+            <StackLayout Orientation="Vertical" BackgroundColor="White" Spacing="0">
+                <StackLayout BackgroundColor="White"
+                        Orientation="Vertical">
+                    <Label Text="More" FontAttributes="Bold" BackgroundColor="White" TextColor="Black" Margin="15" FontSize="18"/>
+                    <BoxView BackgroundColor="Black" HeightRequest="2"/>
+                    <StackLayout Orientation="Horizontal"  HeightRequest="50">
+
+                        <Image Source="http://icons.iconarchive.com/icons/double-j-design/origami-colored-pencil/32/red-home-icon.png" Margin='10' />
+                        <Label Text="Home" Margin="10"
+                                TextColor="Black" />
+                        <ImageButton  Source="http://icons.iconarchive.com/icons/iconsmind/outline/128/Next-2-icon.png" BackgroundColor="Transparent" WidthRequest="20" HeightRequest="20" HorizontalOptions="End" Aspect="Fill" Margin="10" Clicked="Home_Clicked" />
+
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal"   HeightRequest="50">
+                      
+                        <Image Source="http://icons.iconarchive.com/icons/iynque/flurry-extras-9/32/Reference-Tracker-icon.png" Margin='10' />
+                        <Label Text="References" Margin="10"
+                                TextColor="Black"  />
+                        <ImageButton  Source="http://icons.iconarchive.com/icons/iconsmind/outline/128/Next-2-icon.png" BackgroundColor="Transparent" WidthRequest="20" HeightRequest="20" HorizontalOptions="End" Aspect="Fill" Margin="10" Clicked="ImageButton_Clicked" />
+
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal"  HeightRequest="50" >
+
+                        <Image Source="http://icons.iconarchive.com/icons/martz90/circle/32/books-icon.png" Margin='10' />
+                        <Label Text="Download More Books" Margin="10" 
+                                TextColor="Black" />
+                        <ImageButton  Source="http://icons.iconarchive.com/icons/iconsmind/outline/128/Next-2-icon.png" BackgroundColor="Transparent" WidthRequest="20" HeightRequest="20" HorizontalOptions="End" Aspect="Fill" Margin="10" Clicked="Download_Clicked" />
+
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal"  HeightRequest="50" >
+
+                        <Image Source="http://icons.iconarchive.com/icons/icons8/christmas-flat-color/32/star-icon.png" Margin='10' />
+                        <Label Text="Rate Us" Margin="10"
+                                TextColor="Black" />
+                        <ImageButton  Source="http://icons.iconarchive.com/icons/iconsmind/outline/128/Next-2-icon.png" BackgroundColor="Transparent" WidthRequest="20" HeightRequest="20" HorizontalOptions="End" Aspect="Fill" Margin="10" Clicked="ImageButton_Clicked" />
+
+                    </StackLayout>
+                    
+                </StackLayout>
+                <BoxView BackgroundColor="LightGray" HeightRequest="2"/>
+                <Label Text="Do You intent to go to canada soon? We recommend this consultants. Click to Know more" Margin="10" FontSize="14" TextColor="Blue"/>
+
+                <Label Text="Get more wonderful content" Margin="10" FontSize="14" />
+
+                <BoxView BackgroundColor="LightGray" HeightRequest="2"/>
+                <Label x:Name="about" Margin="10" FontSize="14" />
+                <StackLayout Orientation="Horizontal" Margin="10">
+
+                    <Label Text="Author:" FontSize="12" FontAttributes="Bold"  />
+                    <Label Text="G. Keller and J. Pepasan" FontSize="12"/>
+
+                </StackLayout>
+                <Label Text="V 1.0.1" Margin="10" FontSize="14" />
+            </StackLayout>
+        </ContentPage>
+    </MasterDetailPage.Master>
+
+    <MasterDetailPage.Detail >
+        <NavigationPage>
+            <x:Arguments>
+                <local:ContentList/>
+            </x:Arguments>
+        </NavigationPage>
+    </MasterDetailPage.Detail>
+    
+    
+    
+    
+    
+</MasterDetailPage>

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EndTerm.MoreBooks"
+             Title="More Books">
+    <ContentPage.Content>
+        <ScrollView Orientation="Vertical">
+        <StackLayout>
+
+            <Label Text="How To Talk to Anyone" Margin="10" FontSize="14" TextColor="black"/>
+            <BoxView BackgroundColor="LightGray" HeightRequest="1" Margin="5"/>
+            <Label Text="Powerup Your Mind" Margin="10" FontSize="14" TextColor="Black"/>
+
+            <BoxView BackgroundColor="LightGray" HeightRequest="1" Margin="5"/>
+            <Label Text="How to develop a perfect memory" Margin="10" FontSize="14" TextColor="Black"/>
+
+            <BoxView BackgroundColor="LightGray" HeightRequest="1" Margin="5"/>
+            <Label Text="The Purpose driven life" Margin="10" FontSize="14" TextColor="Black"/>
+
+            <BoxView BackgroundColor="LightGray" HeightRequest="1" Margin="5"/>
+            <Label Text="Think and grow Rich" Margin="10" FontSize="14" TextColor="Black"/>
+
+            <BoxView BackgroundColor="LightGray" HeightRequest="1" Margin="5"/>
+            <Label Text="How to win every arguments" Margin="10" FontSize="14" TextColor="Black"/>
+
+            <BoxView BackgroundColor="LightGray" HeightRequest="1" Margin="5"/>
+            <Label Text="12 Rules of Life" Margin="10" FontSize="14" TextColor="Black"/>
+
+            <BoxView BackgroundColor="LightGray" HeightRequest="1" Margin="5"/>
+            <Label Text="The 5 Second Rule" Margin="10" FontSize="14" TextColor="Black"/>
+
+            <BoxView BackgroundColor="LightGray" HeightRequest="1" Margin="5"/>
+            <Label Text="Power of Now" Margin="10" FontSize="14" TextColor="Black"/>
+
+            <BoxView BackgroundColor="LightGray" HeightRequest="1" Margin="5"/>
+            <Label Text="Presentation secrets of Steve Jobs" Margin="10" FontSize="14" TextColor="Black"/>
+
+            <BoxView BackgroundColor="LightGray" HeightRequest="1" Margin="5"/>
+            <Label Text="Spoken English" Margin="10" FontSize="14" TextColor="Black"/>
+
+            <BoxView BackgroundColor="LightGray" HeightRequest="1" Margin="5"/>
+            <Label Text="Powerup Your Mind" Margin="10" FontSize="14" TextColor="Black"/>
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

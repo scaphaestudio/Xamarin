@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EndTerm.DetailPage"
+             Title="{x:Binding Item.Text}">
+    <ContentPage.Content>
+        <AbsoluteLayout>
+        <StackLayout Orientation="Vertical" Padding="5,5,5,5" HorizontalOptions="Center">
+
+                <Label x:Name="title" Text="{x:Binding Item.Text}"  HorizontalOptions="Center" TextColor="Black" FontAttributes="Bold" FontSize="18" Margin="15"/>
+                <BoxView BackgroundColor="Black" HeightRequest="2"/>
+                <Label x:Name="detail" Text="{x:Binding Item.Description}"  HorizontalOptions="Center" FontSize="14"/>
+            
+        </StackLayout>
+           
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

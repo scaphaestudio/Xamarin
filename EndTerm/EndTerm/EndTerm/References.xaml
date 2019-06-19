@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EndTerm.References"
+             Title="References">
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <Label Text="Do You intent to go to canada soon? We recommend this consultants. Click to Know more" Margin="10" FontSize="14" TextColor="Blue"/>
+            <BoxView BackgroundColor="LightGray" HeightRequest="1"/>
+            <Label Text="Get more wonderful content" Margin="10" FontSize="14" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
